@@ -1,0 +1,203 @@
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git init
+Reinitialized existing Git repository in D:/2BL23CS007/.git/
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ mamo e6.txt
+bash: mamo: command not found
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ nano e6.txt
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Helloword.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Helloword.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        e6.txt
+
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git add .
+warning: in the working copy of 'e6.txt', LF will be replaced by CRLF the next time Git touches it
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git commit -m "2bl23cs007"
+[master 2925f14] 2bl23cs007
+ 2 files changed, 5 insertions(+)
+ create mode 100644 e6.txt
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git remote add origin https://github.com/2BL23CS007/abhi2
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git remote add origin https://github.com/2BL23CS007/abhi2.git
+error: remote origin already exists.
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git push origin master
+remote: Permission to 2BL23CS007/abhi2.git denied to deep173.
+fatal: unable to access 'https://github.com/2BL23CS007/abhi2/': The requested URL returned error: 403
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git push origin master
+remote: Permission to 2BL23CS007/abhi2.git denied to deep173.
+fatal: unable to access 'https://github.com/2BL23CS007/abhi2/': The requested URL returned error: 403
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git push origin master
+To https://github.com/2BL23CS007/abhi2
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/2BL23CS007/abhi2'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git push origin master
+To https://github.com/2BL23CS007/abhi2
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/2BL23CS007/abhi2'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git remote add origin https://github.com/2BL23CS007/abhi2.git
+error: remote origin already exists.
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git push origin master
+To https://github.com/2BL23CS007/abhi2
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/2BL23CS007/abhi2'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git push origin master
+To https://github.com/2BL23CS007/abhi2
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/2BL23CS007/abhi2'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git push origin master
+To https://github.com/2BL23CS007/abhi2
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/2BL23CS007/abhi2'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git remote add origin https://github.com/Abhineet80/new.git
+error: remote origin already exists.
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git push origin master
+To https://github.com/2BL23CS007/abhi2
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/2BL23CS007/abhi2'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git fetch origin
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (6/6), 424 bytes | 2.00 KiB/s, done.
+From https://github.com/2BL23CS007/abhi2
+ * [new branch]      master     -> origin/master
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git fetch origin master
+From https://github.com/2BL23CS007/abhi2
+ * branch            master     -> FETCH_HEAD
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git pull origin master
+From https://github.com/2BL23CS007/abhi2
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git remote add origin https://github.com/Abhineet80/new.git
+error: remote origin already exists.
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git push origin master
+To https://github.com/2BL23CS007/abhi2
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/2BL23CS007/abhi2'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git push origin master -f
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 487 bytes | 487.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/2BL23CS007/abhi2
+ + cbd5d59...2925f14 master -> master (forced update)
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git pull origin master
+From https://github.com/2BL23CS007/abhi2
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$ git fetch origin master
+From https://github.com/2BL23CS007/abhi2
+ * branch            master     -> FETCH_HEAD
+
+BLDEA-CSE@DESKTOP-GHJNKOV MINGW64 /d/2BL23CS007 (master)
+$
